@@ -11,10 +11,10 @@ class Employee:
 
 class Manager(Employee):
     def __init__(self, name, salary, team_size):
-        super().__init__(name, salary) # reuse parent
-        self.team_size = team_size # add new data
+        super().__init__(name, salary) 
+        self.team_size = team_size 
 
-    def work(self): # EXTEND
+    def work(self): 
         super().work()
         print(self.name, "is also managing", self.team_size, "people.")
 
